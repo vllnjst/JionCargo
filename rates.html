@@ -1,1 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rates & Fees — JionCargo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="strip"><div id="ticker"></div></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <!-- ============================================================
+           LOGO: put your logo file in the SAME folder as these pages
+           and name it  logo.png  (or change the filename in the two
+           <img src="logo.png"> lines — one here, one in the footer).
+           ============================================================ -->
+      <span class="logo-box">
+        <img src="logo.png" alt="JionCargo logo" onerror="var p=this.parentNode;this.remove();p.insertAdjacentHTML('beforeend','<span class=fallback>JC</span>')">
+      </span>
+      <span class="wordmark">Jion<i>Cargo</i></span>
+    </a>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="track.html">Track Cargo</a>
+      <a href="rates.html" class="on" aria-current="page">Rates &amp; Fees</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="block">
+    <div class="wrap">
+      <div class="kicker">Prices</div>
+      <h2>Cargo rates +<br>delivery fees</h2>
+      <p class="lead">Your total is the cargo rate plus the delivery fee for the destination zone. Prices are in Philippine pesos.</p>
+
+      <div class="rate-grid">
+        <div>
+          <h3 class="sub">Cargo rate by size</h3>
+          <table id="t-size"></table>
+          <h3 class="sub" style="margin-top:30px">Delivery fee by zone</h3>
+          <table id="t-zone"></table>
+          <p class="note">* Sample prices — edit them in the <b>RATES</b> and <b>ZONES</b> lists at the bottom of this file.</p>
+        </div>
+
+        <div class="calc">
+          <h3 class="sub">Quick estimate</h3>
+          <label for="c-size">Cargo size</label>
+          <select id="c-size"></select>
+          <label for="c-zone">Delivery zone</label>
+          <select id="c-zone"></select>
+          <label for="c-qty">Quantity</label>
+          <input id="c-qty" type="number" min="1" value="1">
+          <div class="out">
+            <div><span>Cargo rate</span><span id="o-cargo">—</span></div>
+            <div><span>Delivery fee</span><span id="o-fee">—</span></div>
+            <div class="t"><span>Total</span><span id="o-total">—</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html" style="margin-bottom:12px">
+        <span class="logo-box">
+          <!-- LOGO (footer): same file as above -->
+          <img src="logo.png" alt="JionCargo logo" onerror="var p=this.parentNode;this.remove();p.insertAdjacentHTML('beforeend','<span class=fallback>JC</span>')">
+        </span>
+        <span class="wordmark">Jion<i>Cargo</i></span>
+      </a>
+      <p>Nationwide cargo across the Philippines.</p>
+    </div>
+    <div>
+      <p><b style="color:#fff">CONTACT</b><br>
+      <span data-fill="phone"></span><br>
+      <span data-fill="email"></span><br>
+      <span data-fill="address"></span></p>
+    </div>
+  </div>
+  <div class="wrap"><div class="copy" style="width:100%">© <span id="yr"></span> JionCargo. All rights reserved.</div></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="rates.js"></script>
+</body>
+</html>
 
