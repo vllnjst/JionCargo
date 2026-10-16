@@ -1,9 +1,7 @@
-/* Track Cargo page */
-// open a specific cargo with track.html?id=JC-261015-0041
 let selected = (new URLSearchParams(location.search).get("id") && CARGO.some(c => c.id === new URLSearchParams(location.search).get("id")))
   ? new URLSearchParams(location.search).get("id") : CARGO[0].id;
 
-/* tracking list */
+/* TRACK LIST */
 function renderList(){
   const q = document.getElementById("q").value.trim().toLowerCase();
   const f = document.getElementById("f").value;
@@ -36,7 +34,7 @@ document.getElementById("list").addEventListener("click", e => {
 document.getElementById("q").addEventListener("input", renderList);
 document.getElementById("f").addEventListener("change", renderList);
 
-/* map + detail */
+/* MAP */
 function mapSVG(c){
   let dots = "";
   for (let x = 20; x <= 420; x += 20) for (let y = 40; y <= 540; y += 20) dots += `<circle cx="${x}" cy="${y}" r="1.4" fill="#B5C3EA"/>`;
