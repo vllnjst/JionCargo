@@ -1,1 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — JionCargo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="strip"><div id="ticker"></div></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <!-- ============================================================
+           LOGO: put your logo file in the SAME folder as these pages
+           and name it  logo.png  (or change the filename in the two
+           <img src="logo.png"> lines — one here, one in the footer).
+           ============================================================ -->
+      <span class="logo-box">
+        <img src="logo.png" alt="JionCargo logo" onerror="var p=this.parentNode;this.remove();p.insertAdjacentHTML('beforeend','<span class=fallback>JC</span>')">
+      </span>
+      <span class="wordmark">Jion<i>Cargo</i></span>
+    </a>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="track.html">Track Cargo</a>
+      <a href="rates.html">Rates &amp; Fees</a>
+      <a href="about.html" class="on" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="block">
+    <div class="wrap">
+      <div class="kicker">About JionCargo</div>
+      <h2>A cargo studio<br>for the whole archipelago.</h2>
+      <div class="two">
+        <div>
+          <!-- EDIT: write your own story here -->
+          <p>JionCargo is a cargo studio built for a country of more than 7,000 islands. We handle the whole trip — pickup, hub transfers, sea or air crossing and final delivery — so you deal with one team instead of five.</p>
+          <p>We believe a shipment should never be a mystery. Every cargo carries a waybill, every handover is logged, and every arrival time is posted where you can see it.</p>
+          <p>From a single parcel in Metro Manila to a pallet bound for Davao, we price it clearly and move it carefully.</p>
+        </div>
+        <div class="timeline">
+          <div><span>Step 01</span><b>Book &amp; pack</b>We log your cargo and issue a waybill.</div>
+          <div><span>Step 02</span><b>Pickup &amp; hub</b>Collected and sorted at the nearest hub.</div>
+          <div><span>Step 03</span><b>Cross-country</b>By road, RoRo vessel or air to the destination hub.</div>
+          <div><span>Step 04</span><b>Delivered</b>Out for delivery, signed and closed on the tracker.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html" style="margin-bottom:12px">
+        <span class="logo-box">
+          <!-- LOGO (footer): same file as above -->
+          <img src="logo.png" alt="JionCargo logo" onerror="var p=this.parentNode;this.remove();p.insertAdjacentHTML('beforeend','<span class=fallback>JC</span>')">
+        </span>
+        <span class="wordmark">Jion<i>Cargo</i></span>
+      </a>
+      <p>Nationwide cargo across the Philippines.</p>
+    </div>
+    <div>
+      <p><b style="color:#fff">CONTACT</b><br>
+      <span data-fill="phone"></span><br>
+      <span data-fill="email"></span><br>
+      <span data-fill="address"></span></p>
+    </div>
+  </div>
+  <div class="wrap"><div class="copy" style="width:100%">© <span id="yr"></span> JionCargo. All rights reserved.</div></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+</body>
+</html>
 
