@@ -1,1 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track Cargo — JionCargo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="strip"><div id="ticker"></div></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <!-- ============================================================
+           LOGO: put your logo file in the SAME folder as these pages
+           and name it  logo.png  (or change the filename in the two
+           <img src="logo.png"> lines — one here, one in the footer).
+           ============================================================ -->
+      <span class="logo-box">
+        <img src="logo.png" alt="JionCargo logo" onerror="var p=this.parentNode;this.remove();p.insertAdjacentHTML('beforeend','<span class=fallback>JC</span>')">
+      </span>
+      <span class="wordmark">Jion<i>Cargo</i></span>
+    </a>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="track.html" class="on" aria-current="page">Track Cargo</a>
+      <a href="rates.html">Rates &amp; Fees</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="block">
+    <div class="wrap">
+      <div class="kicker">Live tracker</div>
+      <h2>Where’s my cargo?</h2>
+      <p class="lead">Every cargo on the network, with departure time, current location and arrival time. Click a waybill to see its route.</p>
+
+      <div class="tools">
+        <input id="q" type="search" placeholder="Search waybill, item or city…" aria-label="Search cargo">
+        <select id="f" aria-label="Filter by status">
+          <option value="all">All status</option>
+          <option value="go">In transit</option>
+          <option value="hold">At hub / waiting</option>
+          <option value="done">Delivered</option>
+        </select>
+      </div>
+
+      <div class="track-grid">
+        <div class="list" id="list"></div>
+        <div class="detail" id="detail"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html" style="margin-bottom:12px">
+        <span class="logo-box">
+          <!-- LOGO (footer): same file as above -->
+          <img src="logo.png" alt="JionCargo logo" onerror="var p=this.parentNode;this.remove();p.insertAdjacentHTML('beforeend','<span class=fallback>JC</span>')">
+        </span>
+        <span class="wordmark">Jion<i>Cargo</i></span>
+      </a>
+      <p>Nationwide cargo across the Philippines.</p>
+    </div>
+    <div>
+      <p><b style="color:#fff">CONTACT</b><br>
+      <span data-fill="phone"></span><br>
+      <span data-fill="email"></span><br>
+      <span data-fill="address"></span></p>
+    </div>
+  </div>
+  <div class="wrap"><div class="copy" style="width:100%">© <span id="yr"></span> JionCargo. All rights reserved.</div></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="track.js"></script>
+</body>
+</html>
 
