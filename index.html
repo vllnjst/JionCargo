@@ -1,1 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JionCargo — Nationwide Cargo, Philippines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="strip"><div id="ticker"></div></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <!-- ============================================================
+           LOGO: put your logo file in the SAME folder as these pages
+           and name it  logo.png  (or change the filename in the two
+           <img src="logo.png"> lines — one here, one in the footer).
+           ============================================================ -->
+      <span class="logo-box">
+        <img src="logo.png" alt="JionCargo logo" onerror="var p=this.parentNode;this.remove();p.insertAdjacentHTML('beforeend','<span class=fallback>JC</span>')">
+      </span>
+      <span class="wordmark">Jion<i>Cargo</i></span>
+    </a>
+    <nav id="nav">
+      <a href="index.html" class="on" aria-current="page">Home</a>
+      <a href="track.html">Track Cargo</a>
+      <a href="rates.html">Rates &amp; Fees</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="tag">Luzon · Visayas · Mindanao</span>
+        <h1>Every crate.<br>Every <em>island.</em></h1>
+        <p>JionCargo moves parcels, pallets and full freight loads across the Philippines — by road, sea and air — and you can see exactly where each one is, down to the hour.</p>
+        <div class="cta">
+          <a class="btn" href="track.html">Track a cargo</a>
+          <a class="btn alt" href="rates.html">See rates</a>
+        </div>
+      </div>
+      <div class="manifest" aria-hidden="true">
+        <span class="stamp">In transit</span>
+        <h4>Waybill · sample</h4>
+        <div class="big">Manila → Cebu</div>
+        <div class="row"><span>Departed</span><span>13 Oct · 18:00</span></div>
+        <div class="row"><span>Now at</span><span>Visayan Sea</span></div>
+        <div class="row"><span>Arrives</span><span>16 Oct · 14:00</span></div>
+        <div class="barcode"></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="kicker">What we do</div>
+      <h2>Cargo, tracked<br>like it matters.</h2>
+      <p class="lead">Small studio, nationwide reach. Every shipment gets a waybill number, a live location and a promised arrival time — no guessing, no “it’s on the way.”</p>
+
+      <div class="numbers">
+        <div><strong id="n-active">0</strong><span>Cargo moving now</span></div>
+        <div><strong>3</strong><span>Island groups served</span></div>
+        <div><strong id="n-hubs">0</strong><span>Hubs on the network</span></div>
+        <div><strong>24/7</strong><span>Tracking online</span></div>
+      </div>
+
+      <div class="services">
+        <div class="svc"><div class="no">01</div><h3>Parcels &amp; documents</h3><p>Small, fast, door-to-door. Ideal for online sellers and paperwork.</p></div>
+        <div class="svc"><div class="no">02</div><h3>Boxes &amp; pallets</h3><p>Mid-size cargo packed and strapped for road and RoRo sea routes.</p></div>
+        <div class="svc"><div class="no">03</div><h3>Freight loads</h3><p>Bulk shipments by truck or container with scheduled hub transfers.</p></div>
+        <div class="svc"><div class="no">04</div><h3>Inter-island sea</h3><p>Regular RoRo and vessel crossings linking Luzon, Visayas and Mindanao.</p></div>
+        <div class="svc"><div class="no">05</div><h3>Air express</h3><p>When it can’t wait: priority air cargo to major airports.</p></div>
+        <div class="svc"><div class="no">06</div><h3>Door delivery</h3><p>Last-mile delivery fees are shown up front — before you ship.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap">
+      <h3>Got a waybill number?<br><span>Find your cargo now.</span></h3>
+      <a class="btn" href="track.html">Open tracker</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html" style="margin-bottom:12px">
+        <span class="logo-box">
+          <!-- LOGO (footer): same file as above -->
+          <img src="logo.png" alt="JionCargo logo" onerror="var p=this.parentNode;this.remove();p.insertAdjacentHTML('beforeend','<span class=fallback>JC</span>')">
+        </span>
+        <span class="wordmark">Jion<i>Cargo</i></span>
+      </a>
+      <p>Nationwide cargo across the Philippines.</p>
+    </div>
+    <div>
+      <p><b style="color:#fff">CONTACT</b><br>
+      <span data-fill="phone"></span><br>
+      <span data-fill="email"></span><br>
+      <span data-fill="address"></span></p>
+    </div>
+  </div>
+  <div class="wrap"><div class="copy" style="width:100%">© <span id="yr"></span> JionCargo. All rights reserved.</div></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="common.js"></script>
+</body>
+</html>
 
