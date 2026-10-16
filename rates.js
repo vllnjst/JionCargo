@@ -1,5 +1,4 @@
-/* Rates & Fees page */
-/* rates tables + calculator */
+/* RATES TABLES + CALCU */
 document.getElementById("t-size").innerHTML =
   `<tr><th>Cargo size</th><th class="p">Rate</th></tr>` +
   RATES.map(r => `<tr><td>${r.name}<small>${r.note}</small></td><td class="p">${peso(r.price)}</td></tr>`).join("");
