@@ -1,15 +1,11 @@
-/* =====================================================================
-   1) EDIT YOUR CONTACT DETAILS HERE
-   ===================================================================== */
+/* EDITS DETAILS HERE */
 const CONTACT = {
   phone:   "+63 900 000 0000",
   email:   "hello@joincargo-example.ph",
   address: "Your street, barangay, city, province, Philippines"
 };
 
-/* =====================================================================
-   2) EDIT PRICES HERE  (PHP)
-   ===================================================================== */
+/* EDITS PRICES */
 const RATES = [
   { id:"doc",   name:"Document / small parcel", note:"up to 3 kg",    price:150  },
   { id:"box-s", name:"Small box",               note:"up to 10 kg",   price:350  },
@@ -25,9 +21,7 @@ const ZONES = [
   { id:"isl",  name:"Island / remote areas",   note:"4–7 days",            fee:650 }
 ];
 
-/* =====================================================================
-   3) HUBS — x,y are positions on the schematic map (not a real outline)
-   ===================================================================== */
+/* X AND Y SHOWN POSITION IN MAP */
 const HUBS = {
   "Baguio":           {x:144,y:104, zone:"luz"},
   "Manila":           {x:159,y:176, zone:"ncr"},
@@ -41,15 +35,10 @@ const HUBS = {
   "Davao":            {x:338,y:477, zone:"min"}
 };
 
-/* =====================================================================
-   4) CARGO LIST — add / edit shipments here.
-      stage: 0 Booked · 1 Picked up · 2 In transit · 3 At hub · 4 Out for delivery · 5 Delivered
-      progress: 0–1 = how far along the route it is (moves the map marker)
-      sizeId / the destination's zone decide the price automatically.
-   ===================================================================== */
+/* CARGO LISTS */
 const CARGO = [
   { id:"JC-261015-0041", item:"Home appliance box", sizeId:"box-m", from:"Manila", to:"Cebu", mode:"RoRo vessel",
-    departed:"2026-10-13T18:00", eta:"2026-10-16T14:00", where:"At sea · Visayan Sea", stage:2, progress:.62,
+    departed:"2026-10-13T18:00", eta:"2026-10-16T14:00", where:"At sea · Visaya Sea", stage:2, progress:.62,
     events:[["2026-10-13T18:00","Departed Manila North Harbor"],["2026-10-13T11:20","Picked up from sender"],["2026-10-13T08:05","Booking confirmed"]] },
 
   { id:"JC-261014-0038", item:"Pallet — school supplies", sizeId:"pallet", from:"Manila", to:"Davao", mode:"Truck + vessel",
