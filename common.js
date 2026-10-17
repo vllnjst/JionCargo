@@ -1,4 +1,4 @@
-
+/*COMMON*/
 const STAGES = ["Booked","Picked up","In transit","At hub","Out for delivery","Delivered"];
 const peso = n => "₱" + Number(n).toLocaleString("en-PH");
 const rate = id => RATES.find(r => r.id === id);
