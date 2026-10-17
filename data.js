@@ -1,8 +1,8 @@
 /* EDITS DETAILS HERE */
 const CONTACT = {
-  phone:   "+63 900 000 0000",
-  email:   "hello@joincargo-example.ph",
-  address: "Your street, barangay, city, province, Philippines"
+  phone:   "+63 921 233 1484",
+  email:   "jioncargo.ph@gmail.com",
+  address: "002, Clark Airbase, Pampanga, Philippines"
 };
 
 /* EDITS PRICES */
