@@ -38,7 +38,7 @@ const HUBS = {
 /* CARGO LISTS */
 const CARGO = [
   { id:"JC-261015-0041", item:"Home appliance box", sizeId:"box-m", from:"Manila", to:"Cebu", mode:"RoRo vessel",
-    departed:"2026-10-13T18:00", eta:"2026-10-16T14:00", where:"At sea · Visaya Sea", stage:2, progress:.62,
+    departed:"2026-10-13T18:00", eta:"2026-10-16T14:00", where:"At sea · Visayan Sea", stage:2, progress:.62,
     events:[["2026-10-13T18:00","Departed Manila North Harbor"],["2026-10-13T11:20","Picked up from sender"],["2026-10-13T08:05","Booking confirmed"]] },
 
   { id:"JC-261014-0038", item:"Pallet — school supplies", sizeId:"pallet", from:"Manila", to:"Davao", mode:"Truck + vessel",
