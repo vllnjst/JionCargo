@@ -2,7 +2,7 @@
 const CONTACT = {
   phone:   "+63 921 233 1484",
   email:   "jioncargo.ph@gmail.com",
-  address: "002, Clark Airbase, Pampanga, Philippines"
+  address: "Clark Airbase, Pampanga, Philippines"
 };
 
 /* EDITS PRICES */
