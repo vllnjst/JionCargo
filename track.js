@@ -1,3 +1,4 @@
+/* GETS URL TO SEARCH LOCATION *//*--SAMPLE ONLY */
 let selected = (new URLSearchParams(location.search).get("id") && CARGO.some(c => c.id === new URLSearchParams(location.search).get("id")))
   ? new URLSearchParams(location.search).get("id") : CARGO[0].id;
 
